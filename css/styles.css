@@ -1,6 +1,7 @@
 .body {
-  font-family: "Roboto";
-  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
   font-weight: 500;
 }
 :root{
@@ -9,6 +10,8 @@
   --blue-color: #2196f3;
   --white-color: #ffffff;
   --our-team-bg: #F5F4FA;
+  --main-bg-color: #2f303a;
+  --button-portfolio-color: #212121;
 }
 a {
   cursor: pointer;
@@ -26,7 +29,7 @@ a:active {
 button {
   cursor: pointer;
 }
-/* MAIN PAGE*/
+/* MAIN PAGE */
 /* Header */
 /* Logo */
 .logo {
@@ -38,7 +41,6 @@ button {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--blue-color);
   text-decoration: none;
 }
@@ -47,7 +49,6 @@ button {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--brand-color);
 }
 /* Li */
@@ -55,7 +56,6 @@ button {
   list-style-type: none;
 }
 .menu-link {
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--brand-color);
@@ -64,11 +64,14 @@ button {
 .menu-link:hover {
   color: var(--blue-color);
 }
+
+.current {
+  color: var(--blue-color);
+}
 .menu-contacts {
   list-style-type: none;
 }
 .contacts-link-phone-mail {
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--gray-color)
@@ -79,9 +82,9 @@ button {
 }
 /*Перша секція "замовити послугу"*/
 .try-us {
-  background-color: #2f303a;
+  background-color: var(--main-bg-color);
 }
-.h1-header-class {
+.hero-header-class {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -107,84 +110,76 @@ button {
 }
 .try-button:hover,
 .try-button:focus{
-  background: #188CE8;
+  background: var(--blue-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 /*Друга секція "наші переваги"*/
-.section2 {
+.bests {
   background-color: var(--white-color);
 }
 .menu-strong {
   list-style-type: none;
 }
-.h3-strong-item {
+.list-strong-item {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--brand-color);
 }
 /*Нижче я вказав фонт вейт 400, бо за замовченням я поставив 500*/
-.p-strong-item {
+.text-strong-item {
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--gray-color);
 }
 /*Третя секція "Чим ми займаємось"*/
-.section3 {
+.works {
   background-color: var(--white-color);
 }
-.h2-portfolio-mail {
+.text-portfolio-mail {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--button-portfolio-color);
 }
 .menu-portfolio {
   list-style-type: none;
 }
 /*Четверт секція "Наша команда"*/
-.section4 {
+.team {
   background-color: var(--our-team-bg);
 }
 .team-menu {
   list-style-type: none;
 }
-.h3-name {
+.team-name {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+  color:var(--button-portfolio-color);
 }
-.p-profession {
+.team-profession {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--gray-color);
 }
 /* Далі йдемо до підвалу */
 .footer-main {
-  background-color: #2f303a;
+  background-color: var(--main-bg-color);
 }
 .footer-adress-menu {
   list-style-type: none;
 }
 .footer-contact-link {
+  font-weight: 400;
   text-decoration: none;
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .mailto{
@@ -212,8 +207,7 @@ button {
   font-size: 16px;
   line-height: 1.71;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--button-portfolio-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -226,17 +220,16 @@ button {
   border: none;
 }
 /* UL with picture*/
-.h2-picture-section {
+.name-picture-section {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--brand-color);
 }
-.p-picture-section {
+.caption-picture-section {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
   color: var(--gray-color);
 }
